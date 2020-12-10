@@ -27,6 +27,13 @@ export default class App {
         }while(i<=numero);
         return contador;
     }
+    elevar(numero, potencia){
+        let i,total=numero;
+        for(i=1; i<potencia; i++){
+            total = total*numero;
+        }
+        return total;
+    }
 }
 
 let app = new App();
@@ -37,3 +44,5 @@ console.log("Funcion convertir numero a string: ");
 console.log(app.convertirAString(5));
 console.log("Funcion obtener divisibles ");
 console.log(app.obtenerDivisibles(5));
+console.log("Funcion elevar numero ");
+console.log(app.elevar(5,5));
